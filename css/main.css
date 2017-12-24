@@ -191,7 +191,9 @@ header {
     width: 35px; }
 
   .forty {
-    width: 100%; } }
+    width: 100%;
+    padding-bottom:5%;} }
+
 .icon-project {
   opacity: .5;
   background: #fff;
