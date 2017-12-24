@@ -91,9 +91,8 @@ ul {
 ul li {
   display: inline-block;
   width: 7px;
-  height: 30px;
-  padding: 0 0 8px 0;
-  margin: 0 40px 5px 0px;
+  padding-bottom: 5px;
+  margin: 0 35px 5px 0px;
   border-bottom: 2px solid #FF8656;
   transition: .8s ease; }
   ul li a {
@@ -101,7 +100,7 @@ ul li {
     transition: .2s ease; }
 
 header {
-  position: fixed;
+  position: absolute;
   width: 80%;
   left: 10%;
   top: 10%;
@@ -144,7 +143,7 @@ header {
     padding: 0 0 0 20%; }
   header ul li:hover {
     width: 30px;
-    margin: 0 17px 5px 0px; }
+    margin: 0 12px 5px 0px; }
     header ul li:hover a {
       color: #ffcfbc; }
 
@@ -164,6 +163,32 @@ header {
   width: 20px;
   margin: -25px 0 15px 0; }
 
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  header img {
+    display: none; }
+
+  header h1 {
+    font-size: 24px; }
+
+  header p {
+    font-size: 8px; }
+
+  header a {
+    font-size: 8px; }
+
+  header ul li {
+    width: 5px;
+    margin-right: 20px;
+    padding-bottom: 0; }
+
+  header ul li:hover {
+    width: 15px;
+    margin: 0 10px 5px 0px; }
+
+  .line-one {
+    margin: -30px 0 20px 0;
+    width: 35px; } }
 .icon-project {
   opacity: .5;
   background: #fff;
@@ -264,15 +289,14 @@ body::-webkit-scrollbar {
   .description-project a {
     color: #FF8656; }
 
-nav {
-  position: fixed;
-  margin-top: 20px; }
-  nav a {
+.back {
+  padding: 40px 20px 20px 20px; }
+  .back a {
     color: #FF8656;
-    padding: 20px;
     transition: .2s ease; }
-  nav a:hover {
-    color: #fff; }
+
+.back a:hover {
+  color: #fff; }
 
 #superfly {
   display: block; }
@@ -320,7 +344,7 @@ Helper classes
 
 /*
 * Extends the .visuallyhidden class to allow the element
-* to be focusable when navigated to via the keyboard:
+* to be focusable when igated to via the keyboard:
 * https://www.drupal.org/node/897638
 */
 /*
