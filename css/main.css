@@ -13,6 +13,8 @@ html, body {
   font-size: 1em;
   line-height: 1.4;
   background: #482EA5;
+  background: url("/img/bg.jpg");
+  background-size: cover;
   height: 100%; }
 
 /* width */
@@ -154,7 +156,7 @@ header {
 .line-one {
   background: #FF8656;
   height: 6px;
-  width: 55px;
+  width: 70px;
   margin: -55px 0 40px 0; }
 
 .line-two {
@@ -169,9 +171,7 @@ header {
     display: none; }
 
   header h1 {
-    font-size: 24px;
-    padding-top:0;
-    }
+    font-size: 24px; }
 
   header p {
     font-size: 8px; }
@@ -193,9 +193,7 @@ header {
     width: 35px; }
 
   .forty {
-    width: 100%;
-    padding-bottom:5%;} }
-
+    width: 100%; } }
 .icon-project {
   opacity: .5;
   background: #fff;
@@ -307,6 +305,14 @@ body::-webkit-scrollbar {
 
 #superfly {
   display: block; }
+
+.bg-floater {
+  width: 100%;
+  animation: pulse 20s infinite;
+  z-index: -9000; }
+  .bg-floater img {
+    width: 100%;
+    z-index: -99; }
 
 /* ==========================================================================
 Helper classes

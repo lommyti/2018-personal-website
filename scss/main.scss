@@ -20,6 +20,8 @@ html, body {
     font-size: 1em;
     line-height: 1.4;
     background: $col-purple;
+    background:url('/img/bg.jpg');
+    background-size:cover;
     height:100%;
 }
 
@@ -378,6 +380,16 @@ body::-webkit-scrollbar{
 
 #superfly{
     display:block;
+}
+
+.bg-floater{
+    width:100%;
+    img{
+        width:100%;
+        z-index:-99;
+    }
+    animation:pulse 20s infinite;
+    z-index:-9000;
 }
 
 /* ==========================================================================
